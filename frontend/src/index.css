@@ -1,0 +1,143 @@
+:root {
+  --app-navy: #152238;
+  --app-navy-2: #1c3354;
+  --app-accent: #2d6a9f;
+  --app-page-bg: #e8edf3;
+  --app-card-shadow: 0 0.35rem 1rem rgba(21, 34, 56, 0.06);
+  --app-card-shadow-lg: 0 0.5rem 1.5rem rgba(21, 34, 56, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family:
+    'Segoe UI',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  color: #1a2332;
+  background: var(--app-page-bg);
+  background-image:
+    radial-gradient(ellipse 120% 80% at 50% -20%, rgba(45, 106, 159, 0.12), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(21, 34, 56, 0.04), transparent);
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+}
+
+.app-navbar {
+  background: linear-gradient(135deg, var(--app-navy) 0%, var(--app-navy-2) 100%);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0.25rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.app-navbar .navbar-brand {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.app-navbar .nav-link {
+  border-radius: 0.35rem;
+  padding: 0.35rem 0.65rem !important;
+}
+
+.app-navbar .nav-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff !important;
+}
+
+.app-main {
+  max-width: 1080px;
+}
+
+.app-page-title {
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--app-navy);
+}
+
+.app-surface {
+  background: #fff;
+  border-radius: 0.65rem;
+  box-shadow: var(--app-card-shadow);
+  border: 1px solid rgba(21, 34, 56, 0.06);
+}
+
+.app-surface-lg {
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: var(--app-card-shadow-lg);
+  border: 1px solid rgba(21, 34, 56, 0.07);
+}
+
+.app-table thead th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  color: #5c6b7d;
+  border-bottom-width: 1px;
+  background: #f4f6f9 !important;
+}
+
+.app-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.app-price {
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+  color: var(--app-navy-2);
+}
+
+.login-page {
+  background: var(--app-page-bg);
+  background-image:
+    radial-gradient(ellipse 100% 80% at 50% -30%, rgba(45, 106, 159, 0.18), transparent),
+    radial-gradient(circle at 100% 100%, rgba(21, 34, 56, 0.06), transparent);
+}
+
+.login-card {
+  border: 0;
+  border-radius: 0.85rem;
+  overflow: hidden;
+  box-shadow: var(--app-card-shadow-lg);
+}
+
+.login-card .card-header-custom {
+  background: linear-gradient(135deg, var(--app-navy) 0%, var(--app-accent) 100%);
+  color: #fff;
+  padding: 1.25rem 1.5rem;
+}
+
+.login-card .card-body {
+  padding: 1.75rem;
+}
+
+.login-card .lead-in {
+  font-size: 0.9rem;
+  opacity: 0.92;
+}
+
+.search-wrap .input-group-text {
+  background: #f4f6f9;
+  border-color: #dee2e6;
+  color: #6c757d;
+}
+
+.empty-state {
+  padding: 3rem 1.5rem;
+  border-radius: 0.65rem;
+  background: linear-gradient(180deg, #fff 0%, #f8fafc 100%);
+  border: 1px dashed rgba(21, 34, 56, 0.12);
+}
+
+.modal-content.rounded-4 {
+  border: 0;
+  box-shadow: var(--app-card-shadow-lg);
+}
